@@ -1,0 +1,24 @@
+Powershell commands are setup as verb-nonu or action-object structure and they can have parameters
+
+Start-Transcript: Will create a log of everything we do in the secion that we have powershell open, by defualt will be saved in documents
+Get-Command: Will get the user a list of commands
+Get-Help: Will get the user help
+    Pramaters:
+        -Examples
+        etc..
+Get-Alias: Will get the user the powershell equvilant of a command or its Alias from command prompt and unix
+Clear-Host: Clears the host page
+Get-Process: Will return all the current process running on the computer
+    Pramaters:
+        -Name
+Get-Member: Showes all the properties and functions associated with an object
+Get-History: Will return to the user the the command history of the current ps session
+Get-PSDrive: Get all the drives on the device
+Where-Object: Selects objects from a collection bases on their property values
+    Pramaters:
+        -InputObject <psobject>
+        -Property <String>
+
+Select-Object: Lets the user select certin properties may use * to select all of an objects properties
+ForEach-Object: Dose the task for each object given
+Write-Host: Writes to console
