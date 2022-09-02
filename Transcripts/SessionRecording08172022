@@ -1,0 +1,245 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220817092000
+Username: DESKTOP-LUUA3I4\alons
+RunAs User: DESKTOP-LUUA3I4\alons
+Configuration Name: 
+Machine: DESKTOP-LUUA3I4 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13104
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\SessionRecording08172022
+PS C:\Users\alons\Desktop\PracticePowershell> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+-a----         8/17/2022   9:20 AM            684 SessionRecording08172022
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> get-date
+
+Wednesday, August 17, 2022 9:20:09 AM
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> get-help Get-Member
+
+NAME
+    Get-Member
+
+SYNTAX
+    Get-Member [[-Name] <string[]>] [-InputObject <psobject>] [-MemberType {AliasProperty | CodeProperty | Property |
+    NoteProperty | ScriptProperty | Properties | PropertySet | Method | CodeMethod | ScriptMethod | Methods |
+    ParameterizedProperty | MemberSet | Event | Dynamic | All}] [-View {Extended | Adapted | Base | All}] [-Static]
+    [-Force]  [<CommonParameters>]
+
+
+ALIASES
+    gm
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Get-Member -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113322.
+
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Member -InputObject Get-Date
+
+
+   TypeName: System.String
+
+Name             MemberType            Definition
+----             ----------            ----------
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparab...
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int co...
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringCompari...
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string...
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), i...
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normaliz...
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startI...
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizat...
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char padding...
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, s...
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringCom...
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string I...
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider...
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Help Get-Property
+Get-Help : Get-Help could not find Get-Property in a help file in this session. To download updated help topics type: 
+"Update-Help". To get help online, search for the help topic in the TechNet library at 
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help Get-Property
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Get-Help could not find Get-Property in a help file in this session. To download updated help topics type:
+"Update-Help". To get help online, search for the help topic in the TechNet library at
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help Get-Property
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Help -name proper*
+PS C:\Users\alons\Desktop\PracticePowershell> $T=Get-Date
+PS C:\Users\alons\Desktop\PracticePowershell> $T
+
+Wednesday, August 17, 2022 9:24:20 AM
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> $T.Year
+2022
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Member $T
+Get-Member : You must specify an object for the Get-Member cmdlet.
+At line:1 char:1
++ Get-Member $T
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
+    + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
+Get-Member : You must specify an object for the Get-Member cmdlet.
+At line:1 char:1
++ Get-Member $T
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
+    + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Member -InputObject $T
+
+
+   TypeName: System.DateTime
+
+Name                 MemberType     Definition
+----                 ----------     ----------
+Add                  Method         datetime Add(timespan value)
+AddDays              Method         datetime AddDays(double value)
+AddHours             Method         datetime AddHours(double value)
+AddMilliseconds      Method         datetime AddMilliseconds(double value)
+AddMinutes           Method         datetime AddMinutes(double value)
+AddMonths            Method         datetime AddMonths(int months)
+AddSeconds           Method         datetime AddSeconds(double value)
+AddTicks             Method         datetime AddTicks(long value)
+AddYears             Method         datetime AddYears(int value)
+CompareTo            Method         int CompareTo(System.Object value), int CompareTo(datetime value), int IComparab...
+Equals               Method         bool Equals(System.Object value), bool Equals(datetime value), bool IEquatable[d...
+GetDateTimeFormats   Method         string[] GetDateTimeFormats(), string[] GetDateTimeFormats(System.IFormatProvide...
+GetHashCode          Method         int GetHashCode()
+GetObjectData        Method         void ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo ...
+GetType              Method         type GetType()
+GetTypeCode          Method         System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IsDaylightSavingTime Method         bool IsDaylightSavingTime()
+Subtract             Method         timespan Subtract(datetime value), datetime Subtract(timespan value)
+ToBinary             Method         long ToBinary()
+ToBoolean            Method         bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte               Method         byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar               Method         char IConvertible.ToChar(System.IFormatProvider provider)
+ToDateTime           Method         datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal            Method         decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble             Method         double IConvertible.ToDouble(System.IFormatProvider provider)
+ToFileTime           Method         long ToFileTime()
+ToFileTimeUtc        Method         long ToFileTimeUtc()
+ToInt16              Method         int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32              Method         int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64              Method         long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLocalTime          Method         datetime ToLocalTime()
+ToLongDateString     Method         string ToLongDateString()
+ToLongTimeString     Method         string ToLongTimeString()
+ToOADate             Method         double ToOADate()
+ToSByte              Method         sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToShortDateString    Method         string ToShortDateString()
+ToShortTimeString    Method         string ToShortTimeString()
+ToSingle             Method         float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString             Method         string ToString(), string ToString(string format), string ToString(System.IForma...
+ToType               Method         System.Object IConvertible.ToType(type conversionType, System.IFormatProvider pr...
+ToUInt16             Method         uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32             Method         uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64             Method         uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUniversalTime      Method         datetime ToUniversalTime()
+DisplayHint          NoteProperty   DisplayHintType DisplayHint=DateTime
+Date                 Property       datetime Date {get;}
+Day                  Property       int Day {get;}
+DayOfWeek            Property       System.DayOfWeek DayOfWeek {get;}
+DayOfYear            Property       int DayOfYear {get;}
+Hour                 Property       int Hour {get;}
+Kind                 Property       System.DateTimeKind Kind {get;}
+Millisecond          Property       int Millisecond {get;}
+Minute               Property       int Minute {get;}
+Month                Property       int Month {get;}
+Second               Property       int Second {get;}
+Ticks                Property       long Ticks {get;}
+TimeOfDay            Property       timespan TimeOfDay {get;}
+Year                 Property       int Year {get;}
+DateTime             ScriptProperty System.Object DateTime {get=if ((& { Set-StrictMode -Version 1; $this.DisplayHin...
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Alias Exit
+Get-Alias : This command cannot find a matching alias because an alias with the name 'Exit' does not exist.
+At line:1 char:1
++ Get-Alias Exit
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Exit:String) [Get-Alias], ItemNotFoundException
+    + FullyQualifiedErrorId : ItemNotFoundException,Microsoft.PowerShell.Commands.GetAliasCommand
+Get-Alias : This command cannot find a matching alias because an alias with the name 'Exit' does not exist.
+At line:1 char:1
++ Get-Alias Exit
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Exit:String) [Get-Alias], ItemNotFoundException
+    + FullyQualifiedErrorId : ItemNotFoundException,Microsoft.PowerShell.Commands.GetAliasCommand
+

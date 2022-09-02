@@ -1,0 +1,4041 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220821115932
+Username: DESKTOP-LUUA3I4\alons
+RunAs User: DESKTOP-LUUA3I4\alons
+Configuration Name: 
+Machine: DESKTOP-LUUA3I4 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 12252
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\Transcripts\SessionRecording08212022
+PS C:\Users\alons\Desktop\PracticePowershell> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  11:59 AM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> cd .\Transcripts\
+PS C:\Users\alons\Desktop\PracticePowershell\Transcripts> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+PS C:\Users\alons\Desktop\PracticePowershell\Transcripts> clear
+PS C:\Users\alons\Desktop\PracticePowershell\Transcripts> cd ..
+PS C:\Users\alons\Desktop\PracticePowershell> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  11:59 AM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Move-Item -Path .\SessionRecording08172022 -Destination .\Transcripts
+PS C:\Users\alons\Desktop\PracticePowershell> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-ChildItem Transcripts
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> Get-Help Get-ChildItem
+
+NAME
+    Get-ChildItem
+
+SYNTAX
+    Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>] [-Recurse]
+    [-Depth <uint32>] [-Force] [-Name] [-UseTransaction] [-Attributes {ReadOnly | Hidden | System | Directory |
+    Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed | Offline | NotContentIndexed |
+    Encrypted | IntegrityStream | NoScrubData}] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System]
+    [<CommonParameters>]
+
+    Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>] [-Recurse]
+    [-Depth <uint32>] [-Force] [-Name] [-UseTransaction] [-Attributes {ReadOnly | Hidden | System | Directory |
+    Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed | Offline | NotContentIndexed |
+    Encrypted | IntegrityStream | NoScrubData}] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System]
+    [<CommonParameters>]
+
+
+ALIASES
+    gci
+    ls
+    dir
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Get-ChildItem -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113308.
+
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> clear
+PS C:\Users\alons\Desktop\PracticePowershell> ls
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+PS C:\Users\alons\Desktop\PracticePowershell> cd ..
+PS C:\Users\alons\Desktop> ls
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+PS C:\Users\alons\Desktop> Get-ChildItem -Recurse
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> Clear
+PS C:\Users\alons\Desktop> $tempObject = Get-ChildItem -Recursive
+>> TerminatingError(Get-ChildItem): "A parameter cannot be found that matches parameter name 'Recursive'."
+Get-ChildItem : A parameter cannot be found that matches parameter name 'Recursive'.
+At line:1 char:29
++ $tempObject = Get-ChildItem -Recursive
++                             ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : A parameter cannot be found that matches parameter name 'Recursive'.
+At line:1 char:29
++ $tempObject = Get-ChildItem -Recursive
++                             ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\alons\Desktop> $tempObject = Get-ChildItem -Recurse
+PS C:\Users\alons\Desktop> $tempObject
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> $tempObject.name
+PracticeC++
+PracticeHtmlAndCSSJavaScript
+PracticeJava
+PracticeJavaScript
+PracticePowershell
+PracticePython
+PracticeSQL
+Discord.lnk
+OdeToJoy.png
+Visual Studio Code.lnk
+.vscode
+Arrays
+ClassesAndStructs
+DataTypes
+ForFun
+HeaderFiles
+Literals
+MathDemo
+OperatorPrecedence
+QuickPractice
+Simple
+launch.json
+settings.json
+tasks.json
+OtherDataTypesArrays.cpp
+OtherDataTypesArrays.exe
+SimpleArray.cpp
+SimpleArray.exe
+PersonClassDemo.cpp
+PersonClassDemo.exe
+StructDemo.cpp
+StructDemo.exe
+UsingDefineinPreProcessing.cpp
+UsingDefineinPreProcessing.exe
+showDataSize.cpp
+showDataSize.exe
+ShapesDemo.cpp
+ShapesDemo.exe
+foo.cpp
+foo.h
+main.cpp
+main.exe
+BooleanLiteralsDemo.cpp
+BooleanLiteralsDemo.exe
+IntegerLiteralsDemo.cpp
+NullprtDemo.cpp
+NullprtDemo.exe
+Demo.cpp
+Demo.exe
+MyMath.cpp
+MyMath.h
+OverLoading.cpp
+OverLoading.exe
+temp.exe
+SimpleFuctions.cpp
+SimpleFuctions.exe
+helloworld.html
+HelloWorld.js
+helloworldcss.css
+IfStatments.js
+MathOperations.js
+StringOperations.js
+.vscode
+HelloWorld
+Loops
+MultipleClasses
+QuickPractice
+Simple
+DataTypeSizes.java
+settings.json
+HelloWorld.class
+HelloWorld.java
+DoWhileDemo.java
+ForDemo.java
+WhileDemo.java
+Main.class
+Main.java
+Person.class
+Person.java
+README.txt
+InputOutPutDemo.class
+InputOutPutDemo.java
+client
+server
+NorthMesquite.sql
+Transcripts
+Notes.txt
+PowershellObjectNotes.txt
+PowershellOperators.txt
+README.TXT
+SessionRecording08172022
+SessionRecording08212022
+Commands.txt
+HardwareStoreSchema.txt
+HardwareStoreTables.sql
+PersonTableExample.sql
+README.txt.txt
+PS C:\Users\alons\Desktop> clear
+PS C:\Users\alons\Desktop> Get-Help Where-Object -Online
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -Match *.pdf}
+At line:1 char:41
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                         ~
+You must provide a value expression following the '-Match' operator.
+
+At line:1 char:43
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                           ~
+You must provide a value expression following the '*' operator.
+
+At line:1 char:43
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                           ~~~~
+Unexpected token '.pdf' in expression or statement.
+At line:1 char:41
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                         ~
+You must provide a value expression following the '-Match' operator.
+
+At line:1 char:43
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                           ~
+You must provide a value expression following the '*' operator.
+
+At line:1 char:43
++ $tempObject|Where-Object {$_.Name -Match *.pdf}
++                                           ~~~~
+Unexpected token '.pdf' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpectedValueExpression
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -Match "*.pdf"}
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+parsing "*.pdf" - Quantifier {x,y} following nothing.
+At line:1 char:27
++ $tempObject|Where-Object {$_.Name -Match "*.pdf"}
++                           ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -contains "*.pdf"}
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -contains *.pdf}
+At line:1 char:44
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                            ~
+You must provide a value expression following the '-contains' operator.
+
+At line:1 char:46
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                              ~
+You must provide a value expression following the '*' operator.
+
+At line:1 char:46
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                              ~~~~
+Unexpected token '.pdf' in expression or statement.
+At line:1 char:44
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                            ~
+You must provide a value expression following the '-contains' operator.
+
+At line:1 char:46
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                              ~
+You must provide a value expression following the '*' operator.
+
+At line:1 char:46
++ $tempObject|Where-Object {$_.Name -contains *.pdf}
++                                              ~~~~
+Unexpected token '.pdf' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpectedValueExpression
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -contains "pdf"}
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name}
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -contain "txt"}
+At line:1 char:35
++ $tempObject|Where-Object {$_.Name -contain "txt"}
++                                   ~~~~~~~~
+Unexpected token '-contain' in expression or statement.
+
+At line:1 char:44
++ $tempObject|Where-Object {$_.Name -contain "txt"}
++                                            ~~~~~
+Unexpected token '"txt"' in expression or statement.
+At line:1 char:35
++ $tempObject|Where-Object {$_.Name -contain "txt"}
++                                   ~~~~~~~~
+Unexpected token '-contain' in expression or statement.
+
+At line:1 char:44
++ $tempObject|Where-Object {$_.Name -contain "txt"}
++                                            ~~~~~
+Unexpected token '"txt"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -ccontain "txt"}
+At line:1 char:35
++ $tempObject|Where-Object {$_.Name -ccontain "txt"}
++                                   ~~~~~~~~~
+Unexpected token '-ccontain' in expression or statement.
+
+At line:1 char:45
++ $tempObject|Where-Object {$_.Name -ccontain "txt"}
++                                             ~~~~~
+Unexpected token '"txt"' in expression or statement.
+At line:1 char:35
++ $tempObject|Where-Object {$_.Name -ccontain "txt"}
++                                   ~~~~~~~~~
+Unexpected token '-ccontain' in expression or statement.
+
+At line:1 char:45
++ $tempObject|Where-Object {$_.Name -ccontain "txt"}
++                                             ~~~~~
+Unexpected token '"txt"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -ccontains "txt"}
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -ccontains "*txt"}
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name -CIn "a"}
+PS C:\Users\alons\Desktop> $tempObject|Where-Object {$_.Name}
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> $tempObject|Where-Object -Property Name -Contains 'Session'
+PS C:\Users\alons\Desktop> Get-ChildItem -Recurse
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> Get-ChildItem -Recurse| Where-Object -Property Name -Contains 'Session'
+PS C:\Users\alons\Desktop> Get-ChildItem -Recurse| Where-Object {$_.Name -Contains "C"}
+PS C:\Users\alons\Desktop> clear
+PS C:\Users\alons\Desktop> $tempArray ={"Alonso","Jeff","Orange"}
+PS C:\Users\alons\Desktop> $tempArray
+"Alonso","Jeff","Orange"
+PS C:\Users\alons\Desktop> $tempArray.count
+1
+PS C:\Users\alons\Desktop> $tempArray ="Alonso","Jeff","Orange"
+PS C:\Users\alons\Desktop> $tempArray
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> $tempArray.count
+3
+PS C:\Users\alons\Desktop> $tempArray|Where-Object {$_.Name -Contains "A"}
+PS C:\Users\alons\Desktop> $tempArray|$_.name
+At line:1 char:12
++ $tempArray|$_.name
++            ~~~~~~~
+Expressions are only allowed as the first element of a pipeline.
+At line:1 char:12
++ $tempArray|$_.name
++            ~~~~~~~
+Expressions are only allowed as the first element of a pipeline.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpressionsMustBeFirstInPipeline
+
+PS C:\Users\alons\Desktop> $tempArray|Get-Item $_.name
+>> TerminatingError(Get-Item): "Cannot bind argument to parameter 'Path' because it is null."
+Get-Item : Cannot bind argument to parameter 'Path' because it is null.
+At line:1 char:21
++ $tempArray|Get-Item $_.name
++                     ~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Get-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Cannot bind argument to parameter 'Path' because it is null.
+At line:1 char:21
++ $tempArray|Get-Item $_.name
++                     ~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Get-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.GetItemComm
+   and
+
+PS C:\Users\alons\Desktop> $tempArray|Get-Item .
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take 
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Alonso:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Alonso:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take 
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Jeff:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Jeff:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take 
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Orange:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : The input object cannot be bound to any parameters for the command either because the command does not take
+pipeline input or the input and its properties do not match any of the parameters that take pipeline input.
+At line:1 char:12
++ $tempArray|Get-Item .
++            ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Orange:String) [Get-Item], ParameterBindingException
+    + FullyQualifiedErrorId : InputObjectNotBound,Microsoft.PowerShell.Commands.GetItemCommand
+
+PS C:\Users\alons\Desktop> $tempArray|Echo
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> Get-Alias Echo
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           echo -> Write-Output
+
+
+PS C:\Users\alons\Desktop> $tempObject|Write-Output
+
+
+    Directory: C:\Users\alons\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   1:43 PM                PracticeC++
+d-----         8/20/2022  12:45 PM                PracticeHtmlAndCSSJavaScript
+d-----         8/13/2022  11:15 AM                PracticeJava
+d-----         4/25/2022  10:15 PM                PracticeJavaScript
+d-----         8/21/2022  12:05 PM                PracticePowershell
+d-----         8/20/2022   7:34 PM                PracticePython
+d-----         8/15/2022   5:51 PM                PracticeSQL
+-a----          3/1/2022   2:29 PM           1488 Discord.lnk
+-a----         8/17/2022  10:56 AM          59804 OdeToJoy.png
+-a----         4/22/2022  11:37 PM           1400 Visual Studio Code.lnk
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/14/2022   2:38 PM                .vscode
+d-----         7/17/2022   1:06 PM                Arrays
+d-----         7/16/2022   8:33 PM                ClassesAndStructs
+d-----         8/14/2022   2:33 PM                DataTypes
+d-----         7/24/2022   7:43 PM                ForFun
+d-----         7/14/2022   5:34 PM                HeaderFiles
+d-----         7/17/2022   2:16 PM                Literals
+d-----         7/15/2022  12:18 PM                MathDemo
+d-----         7/16/2022   2:37 PM                OperatorPrecedence
+d-----         8/14/2022   2:59 PM                QuickPractice
+d-----         7/14/2022   4:53 PM                Simple
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   2:01 PM           1398 launch.json
+-a----         8/14/2022   2:38 PM             44 settings.json
+-a----         7/24/2022   6:47 PM            743 tasks.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Arrays
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/17/2022   1:06 PM            620 OtherDataTypesArrays.cpp
+-a----         7/17/2022   1:06 PM          48496 OtherDataTypesArrays.exe
+-a----         7/17/2022  12:56 PM            184 SimpleArray.cpp
+-a----         7/17/2022  12:56 PM          44775 SimpleArray.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ClassesAndStructs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   8:28 PM            390 PersonClassDemo.cpp
+-a----         7/16/2022   8:33 PM          48307 PersonClassDemo.exe
+-a----         7/16/2022   3:07 PM            314 StructDemo.cpp
+-a----         7/16/2022   3:08 PM          44904 StructDemo.exe
+-a----         7/16/2022   3:15 PM            517 UsingDefineinPreProcessing.cpp
+-a----         7/16/2022   3:12 PM          44935 UsingDefineinPreProcessing.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\DataTypes
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   6:47 PM            451 showDataSize.cpp
+-a----         8/14/2022   2:33 PM          46169 showDataSize.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\ForFun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/24/2022   7:42 PM           1169 ShapesDemo.cpp
+-a----         7/24/2022   7:43 PM          50478 ShapesDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\HeaderFiles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   5:31 PM             42 foo.cpp
+-a----         7/14/2022   5:28 PM             20 foo.h
+-a----         7/14/2022   5:33 PM            190 main.cpp
+-a----         7/14/2022   5:34 PM          44266 main.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Literals
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/16/2022   9:15 PM            226 BooleanLiteralsDemo.cpp
+-a----         7/16/2022   9:16 PM          44535 BooleanLiteralsDemo.exe
+-a----         7/16/2022   9:12 PM            217 IntegerLiteralsDemo.cpp
+-a----         7/17/2022   8:49 PM            732 NullprtDemo.cpp
+-a----         7/17/2022   2:16 PM          49841 NullprtDemo.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\MathDemo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/15/2022  12:17 PM            369 Demo.cpp
+-a----         7/15/2022  12:18 PM          46019 Demo.exe
+-a----         7/15/2022  12:12 PM            265 MyMath.cpp
+-a----         7/15/2022  12:12 PM            161 MyMath.h
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/14/2022   3:09 PM            673 OverLoading.cpp
+-a----         8/14/2022   2:59 PM          45158 OverLoading.exe
+-a----         8/14/2022   2:58 PM          45158 temp.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeC++\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/14/2022   4:27 PM            247 SimpleFuctions.cpp
+-a----         7/14/2022   4:19 PM          61128 SimpleFuctions.exe
+
+
+    Directory: C:\Users\alons\Desktop\PracticeHtmlAndCSSJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/19/2022   8:01 PM           1374 helloworld.html
+-a----         8/20/2022  12:29 PM             29 HelloWorld.js
+-a----         8/19/2022   8:26 PM              0 helloworldcss.css
+-a----         8/20/2022  12:55 PM            315 IfStatments.js
+-a----         8/20/2022  12:39 PM            310 MathOperations.js
+-a----         8/20/2022   1:04 PM             19 StringOperations.js
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/23/2022   2:50 PM                .vscode
+d-----         7/18/2022   2:29 PM                HelloWorld
+d-----         7/23/2022   3:04 PM                Loops
+d-----         7/19/2022   3:49 PM                MultipleClasses
+d-----         8/13/2022  11:15 AM                QuickPractice
+d-----         7/19/2022   8:51 AM                Simple
+-a----         8/13/2022  11:15 AM            842 DataTypeSizes.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\.vscode
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:23 AM            130 settings.json
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\HelloWorld
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/18/2022   2:11 PM            411 HelloWorld.class
+-a----         7/18/2022   3:16 PM            151 HelloWorld.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Loops
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/23/2022   3:26 PM            664 DoWhileDemo.java
+-a----         7/23/2022   2:52 PM            448 ForDemo.java
+-a----         7/23/2022   3:04 PM            630 WhileDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\MultipleClasses
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   3:49 PM            376 Main.class
+-a----         7/19/2022   3:56 PM            204 Main.java
+-a----         7/19/2022   3:49 PM            497 Person.class
+-a----         7/19/2022   4:00 PM            252 Person.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\QuickPractice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/13/2022  11:15 AM            139 README.txt
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJava\Simple
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/19/2022   8:51 AM           1117 InputOutPutDemo.class
+-a----         7/19/2022   8:52 AM            348 InputOutPutDemo.java
+
+
+    Directory: C:\Users\alons\Desktop\PracticeJavaScript
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/25/2022   9:00 PM                client
+d-----         4/25/2022   9:00 PM                server
+-a----         4/25/2022  10:15 PM            496 NorthMesquite.sql
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/21/2022  12:05 PM                Transcripts
+-a----         8/16/2022   8:30 PM           1186 Notes.txt
+-a----         8/16/2022   8:03 PM             36 PowershellObjectNotes.txt
+-a----         8/16/2022   8:03 PM             46 PowershellOperators.txt
+-a----         8/16/2022   8:03 PM             53 README.TXT
+
+
+    Directory: C:\Users\alons\Desktop\PracticePowershell\Transcripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/17/2022   9:26 AM          15283 SessionRecording08172022
+-a----         8/21/2022  11:59 AM              0 SessionRecording08212022
+
+
+    Directory: C:\Users\alons\Desktop\PracticeSQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/15/2022   7:30 PM           1084 Commands.txt
+-a----         8/15/2022  12:29 PM            175 HardwareStoreSchema.txt
+-a----         8/15/2022   6:13 PM            678 HardwareStoreTables.sql
+-a----         8/15/2022  12:51 PM            268 PersonTableExample.sql
+-a----         8/15/2022  12:29 PM             68 README.txt.txt
+
+
+PS C:\Users\alons\Desktop> $tempArray|Write-Output
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> Get-Members -InputObject {$tempArray}
+Get-Members : The term 'Get-Members' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Members -InputObject {$tempArray}
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Members:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-Members : The term 'Get-Members' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Members -InputObject {$tempArray}
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Members:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alons\Desktop> Get-Members -InputObject $tempArray
+Get-Members : The term 'Get-Members' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Members -InputObject $tempArray
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Members:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-Members : The term 'Get-Members' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Members -InputObject $tempArray
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Members:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\alons\Desktop> clear
+PS C:\Users\alons\Desktop> $tempArray
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> Get-Member -InputObject $tempArray
+
+
+   TypeName: System.Object[]
+
+Name           MemberType            Definition
+----           ----------            ----------
+Count          AliasProperty         Count = Length
+Add            Method                int IList.Add(System.Object value)
+Address        Method                System.Object&, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a...
+Clear          Method                void IList.Clear()
+Clone          Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo      Method                int IStructuralComparable.CompareTo(System.Object other, System.Collections.ICo...
+Contains       Method                bool IList.Contains(System.Object value)
+CopyTo         Method                void CopyTo(array array, int index), void CopyTo(array array, long index), void...
+Equals         Method                bool Equals(System.Object obj), bool IStructuralEquatable.Equals(System.Object ...
+Get            Method                System.Object Get(int )
+GetEnumerator  Method                System.Collections.IEnumerator GetEnumerator(), System.Collections.IEnumerator ...
+GetHashCode    Method                int GetHashCode(), int IStructuralEquatable.GetHashCode(System.Collections.IEqu...
+GetLength      Method                int GetLength(int dimension)
+GetLongLength  Method                long GetLongLength(int dimension)
+GetLowerBound  Method                int GetLowerBound(int dimension)
+GetType        Method                type GetType()
+GetUpperBound  Method                int GetUpperBound(int dimension)
+GetValue       Method                System.Object GetValue(Params int[] indices), System.Object GetValue(int index)...
+IndexOf        Method                int IList.IndexOf(System.Object value)
+Initialize     Method                void Initialize()
+Insert         Method                void IList.Insert(int index, System.Object value)
+Remove         Method                void IList.Remove(System.Object value)
+RemoveAt       Method                void IList.RemoveAt(int index)
+Set            Method                void Set(int , System.Object )
+SetValue       Method                void SetValue(System.Object value, int index), void SetValue(System.Object valu...
+ToString       Method                string ToString()
+Item           ParameterizedProperty System.Object IList.Item(int index) {get;set;}
+IsFixedSize    Property              bool IsFixedSize {get;}
+IsReadOnly     Property              bool IsReadOnly {get;}
+IsSynchronized Property              bool IsSynchronized {get;}
+Length         Property              int Length {get;}
+LongLength     Property              long LongLength {get;}
+Rank           Property              int Rank {get;}
+SyncRoot       Property              System.Object SyncRoot {get;}
+
+
+PS C:\Users\alons\Desktop> $tempArray.add("Lisa")
+Exception calling "Add" with "1" argument(s): "Collection was of a fixed size."
+At line:1 char:1
++ $tempArray.add("Lisa")
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+Exception calling "Add" with "1" argument(s): "Collection was of a fixed size."
+At line:1 char:1
++ $tempArray.add("Lisa")
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+
+PS C:\Users\alons\Desktop> $tempArray.add(Lisa)
+At line:1 char:16
++ $tempArray.add(Lisa)
++                ~
+Missing ')' in method call.
+
+At line:1 char:16
++ $tempArray.add(Lisa)
++                ~~~~
+Unexpected token 'Lisa' in expression or statement.
+
+At line:1 char:20
++ $tempArray.add(Lisa)
++                    ~
+Unexpected token ')' in expression or statement.
+At line:1 char:16
++ $tempArray.add(Lisa)
++                ~
+Missing ')' in method call.
+
+At line:1 char:16
++ $tempArray.add(Lisa)
++                ~~~~
+Unexpected token 'Lisa' in expression or statement.
+
+At line:1 char:20
++ $tempArray.add(Lisa)
++                    ~
+Unexpected token ')' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInMethodCall
+
+PS C:\Users\alons\Desktop> $tempArray
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> $tempArray+"Lisa"
+Alonso
+Jeff
+Orange
+Lisa
+PS C:\Users\alons\Desktop> Get-Alias +
+Get-Alias : This command cannot find a matching alias because an alias with the name '+' does not exist.
+At line:1 char:1
++ Get-Alias +
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (+:String) [Get-Alias], ItemNotFoundException
+    + FullyQualifiedErrorId : ItemNotFoundException,Microsoft.PowerShell.Commands.GetAliasCommand
+Get-Alias : This command cannot find a matching alias because an alias with the name '+' does not exist.
+At line:1 char:1
++ Get-Alias +
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (+:String) [Get-Alias], ItemNotFoundException
+    + FullyQualifiedErrorId : ItemNotFoundException,Microsoft.PowerShell.Commands.GetAliasCommand
+
+PS C:\Users\alons\Desktop> Get-Help +
+TOPIC
+	Should
+
+SYNOPSIS
+	Provides assertion convenience methods for comparing objects and throwing 
+	test failures when test expectations fail.
+
+DESCRIPTION
+	Should is an Extension of System.Object and can be used as a native type 
+	inside Describe blocks. The various Should member methods can be invoked 
+	directly from an object being compared. It is typically used in individual 
+	It blocks to verify the results of an expectation. The Should method is 
+	typically called from the "actual" object being compared and takes the 
+	"expected" object as a parameter. Should includes several members that 
+	perform various comparisons of objects and will throw a PesterFailure when 
+	the objects do not evaluate to be comparable.
+
+SHOULD MEMBERS
+
+	Be
+		Compares one object with another for equality and throws if the two 
+		objects are not the same.
+
+        $actual="Actual value"
+        $actual | Should Be "actual value" # Test will pass
+        $actual | Should Be "not actual value"  # Test will fail
+
+    BeExactly
+        Compares one object with another for equality and throws if the two objects are not the same.  This comparison is case sensitive.
+
+        $actual="Actual value"
+        $actual | Should BeExactly "Actual value" # Test will pass
+        $actual | Should BeExactly "actual value" # Test will fail
+        
+    BeLike
+        Users a wildcard to compare two objects. The comparision is not case sensitive.
+        
+        "I am a value" | Should BeLike "*value"  # Test will pass
+        "I am a value" | Should BeLike "value"  # Test will fail
+        
+        Tip: use [Management.Automation.WildcardPattern]::Escape() to escape wildcard-characters.
+        
+    BeLikeExactly
+        Users a wildcard to compare two objects. The comparision is case sensitive.
+        
+        "I am a value" | Should BeLike "*value"  # Test will pass
+        "I am a value" | Should BeLike "*VALUE"  # Test will fail
+        
+        Tip: use [Management.Automation.WildcardPattern]::Escape() to escape wildcard-characters.
+        
+    BeGreaterThan
+        Asserts that a number is greater than an expected value. Uses PowerShell's -gt operator to compare the two values.
+        
+        $Error.Count | Should BeGreaterThan 0
+
+    BeLessThan
+        Asserts that a number is less than an expected value. Uses PowerShell's -gt operator to compare the two values.
+        
+        $Error.Count | Should BeLessThan 1
+
+	Exist
+		Does not perform any comparison but checks if the object calling Exist 
+		is present in a PS Provider. The object must have valid path syntax. It 
+		essentially must pass a Test-Path call.
+
+        $actual=(Dir . )[0].FullName
+        Remove-Item $actual
+        $actual | Should Exist # Test will fail
+
+    Contain
+        Checks to see if a file contains the specified text.  This search is not case sensitive and uses regular expressions. 
+        
+        Set-Content -Path TestDrive:\file.txt -Value 'I am a file.'
+        'TestDrive:\file.txt' | Should Contain 'I Am' # Test will pass
+        'TestDrive:\file.txt' | Should Contain '^I.*file$' # Test will pass
+
+        'TestDrive:\file.txt' | Should Contain 'I Am Not' # Test will fail
+
+        Tip: Use [regex]::Escape("pattern") to match the exact text.
+	    
+        Set-Content -Path TestDrive:\file.txt -Value 'I am a file.'
+        'TestDrive:\file.txt' | Should Contain 'I.am.a.file' # Test will pass
+        'TestDrive:\file.txt' | Should Contain ([regex]::Escape('I.am.a.file')) # Test will fail
+
+    ContainExactly
+        Checks to see if a file contains the specified text.  This search is case sensitive and uses regular expressions to match the text.
+
+        Set-Content -Path TestDrive:\file.txt -Value 'I am a file.'
+        'TestDrive:\file.txt' | Should Contain 'I am' # Test will pass
+        'TestDrive:\file.txt' | Should Contain 'I Am' # Test will fail
+
+    Match
+		Uses a regular expression to compare two objects. This comparison is not case sensitive.
+
+        "I am a value" | Should Match "I Am" # Test will pass
+        "I am a value" | Should Match "I am a bad person" # Test will fail
+
+        Tip: Use [regex]::Escape("pattern") to match the exact text.
+
+        "Greg" | Should Match ".reg" # Test will pass
+        "Greg" | Should Match ([regex]::Escape(".reg")) # Test will fail
+
+    MatchExactly
+        Uses a regular expression to compare two objects.  This comparison is case sensitive.
+
+        "I am a value" | Should MatchExactly "I am" # Test will pass
+        "I am a value" | Should MatchExactly "I Am" # Test will fail
+
+    Throw
+        Checks if an exception was thrown in the input ScriptBlock.
+
+        { foo } | Should Throw # Test will pass
+        { $foo = 1 } | Should Throw # Test will fail
+        { foo } | Should Not Throw # Test will fail
+        { $foo = 1 } | Should Not Throw # Test will pass
+
+        Warning: The input object must be a ScriptBlock, otherwise it is processed outside of the assertion.
+
+        Get-Process -Name "process" -ErrorAction Stop | Should Throw # Should pass, but the exception thrown by Get-Process causes the test to fail.
+
+    BeNullOrEmpty
+        Checks values for null or empty (strings). The static [String]::IsNullOrEmpty() method is used to do the comparison.
+
+        $null | Should BeNullOrEmpty # Test will pass
+        $null | Should Not BeNullOrEmpty # Test will fail
+        @()   | Should BeNullOrEmpty # Test will pass
+        ""    | Should BeNullOrEmpty # Test will pass
+
+USING SHOULD IN A TEST
+
+	function Add-Numbers($a, $b) {
+	    return $a + $b
+	}
+
+	Describe "Add-Numbers" {
+
+	    It "adds positive numbers" {
+	        $sum = Add-Numbers 2 3
+	        $sum | should be 3
+	    }
+	}
+
+	This test will fail since 3 will not be equal to the sum of 2 and 3.
+
+SEE ALSO
+	Describe
+    Context
+	It
+PS C:\Users\alons\Desktop> $tempArray.count
+3
+PS C:\Users\alons\Desktop> $tempArray
+Alonso
+Jeff
+Orange
+PS C:\Users\alons\Desktop> $tempArray=+'Lisa'
+Cannot convert value "Lisa" to type "System.Int32". Error: "Input string was not in a correct format."
+At line:1 char:1
++ $tempArray=+'Lisa'
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastFromStringToInteger
+Cannot convert value "Lisa" to type "System.Int32". Error: "Input string was not in a correct format."
+At line:1 char:1
++ $tempArray=+'Lisa'
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastFromStringToInteger
+
+PS C:\Users\alons\Desktop> $tempArray=+"Lisa"
+Cannot convert value "Lisa" to type "System.Int32". Error: "Input string was not in a correct format."
+At line:1 char:1
++ $tempArray=+"Lisa"
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastFromStringToInteger
+Cannot convert value "Lisa" to type "System.Int32". Error: "Input string was not in a correct format."
+At line:1 char:1
++ $tempArray=+"Lisa"
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastFromStringToInteger
+
+PS C:\Users\alons\Desktop> $tempArray=$tempArray+'Lisa'
+PS C:\Users\alons\Desktop> $tempArray.count
+4
+PS C:\Users\alons\Desktop> $tempArray
+Alonso
+Jeff
+Orange
+Lisa
+PS C:\Users\alons\Desktop> $tempArray.name
+PS C:\Users\alons\Desktop> ForEach-Object -InputObject $tempArray -Process{Write-Host "hello"}
+hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object -Process{Write-Host "Hello"}
+Hello
+Hello
+Hello
+Hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {Echo "Hello"}
+Hello
+Hello
+Hello
+Hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {Echo "Hello"}{Write-Host "Second Hello"}
+Hello
+Second Hello
+Second Hello
+Second Hello
+Second Hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {Echo "Hello"}{Write-Host "Second Hello"}{Echo "Third Hello"}
+Hello
+Second Hello
+Second Hello
+Second Hello
+Second Hello
+Third Hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{Write-Host "Second Hello"}{}
+Second Hello
+Second Hello
+Second Hello
+Second Hello
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{$_.name}{}
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{Get-Item $_}{}
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Alonso' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Alonso:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Alonso' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Alonso:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Jeff' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Jeff:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Jeff' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Jeff:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Orange' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Orange:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Orange' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Orange:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Lisa' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Lisa:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Cannot find path 'C:\Users\alons\Desktop\Lisa' because it does not exist.
+At line:1 char:30
++ $tempArray|ForEach-Object {}{Get-Item $_}{}
++                              ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\alons\Desktop\Lisa:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{Write-Host $_}{}
+Alonso
+Jeff
+Orange
+Lisa
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{Get-Member -InputObject $_}{}
+
+
+   TypeName: System.String
+
+Name             MemberType            Definition
+----             ----------            ----------
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparab...
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int co...
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringCompari...
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string...
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), i...
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normaliz...
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startI...
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizat...
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char padding...
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, s...
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringCom...
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string I...
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider...
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparab...
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int co...
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringCompari...
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string...
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), i...
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normaliz...
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startI...
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizat...
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char padding...
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, s...
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringCom...
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string I...
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider...
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparab...
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int co...
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringCompari...
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string...
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), i...
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normaliz...
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startI...
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizat...
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char padding...
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, s...
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringCom...
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string I...
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider...
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparab...
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int co...
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringCompari...
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string...
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), i...
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normaliz...
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startI...
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizat...
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char padding...
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, s...
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringCom...
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string I...
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider...
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+
+
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{$_.ToString}{}
+
+OverloadDefinitions
+-------------------
+string ToString()
+string ToString(System.IFormatProvider provider)
+string IConvertible.ToString(System.IFormatProvider provider)
+
+string ToString()
+string ToString(System.IFormatProvider provider)
+string IConvertible.ToString(System.IFormatProvider provider)
+
+string ToString()
+string ToString(System.IFormatProvider provider)
+string IConvertible.ToString(System.IFormatProvider provider)
+
+string ToString()
+string ToString(System.IFormatProvider provider)
+string IConvertible.ToString(System.IFormatProvider provider)
+
+
+
+PS C:\Users\alons\Desktop> $tempArray|ForEach-Object {}{$_.ToString()}{}
+Alonso
+Jeff
+Orange
+Lisa
+PS C:\Users\alons\Desktop> exit
+**********************
+Windows PowerShell transcript end
+End time: 20220821131241
+**********************
